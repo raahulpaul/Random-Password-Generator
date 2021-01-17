@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+font-family: 'Open Sans', sans-serif;
+}
+
+li, a, button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background: #0000008a;
+	max-height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+
+.overlay{
+	background: #0000008a;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.logo {
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.navbar__logo{
+	padding: 12px
+}
+
+.nav-links {
+	list-style: none;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 0px 20px;
+
+}
+
+.nav-links li a {
+	transition: all 0.3s ease 0s;
+	font-weight: bold;
+}
+
+.nav-links li a:hover {
+	color: #bedcfa;
+	transform: scale(1.1);
+}
+
+.nav-links li a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+
+.nav-links li a:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+
+.navbar-toggler {
+	background-color: rgba(0,136,169,1);
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.navbar-toggler:hover {
+	background-color: rgba(0,136,169,0.8);
+}
+
+/*Header End*/
+
+#scene{
+  height: 100%;
+}
+
+.layer1{
+  left: 70% !important;
+  top: 50% !important;
+}
+
+.layer2{
+  top: 50% !important;
+}
+
+.layer3{
+  left: 50% !important;
+  top: 25% !important;
+}
+
+
+/*Hero Element*/
+
+#hero {
+            height:100vh;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            overflow: hidden;
+}
+
+
+
+#hero::after {
+      width:100%;
+      height:100%;
+      content: '';
+      position:absolute;
+      z-index:10;
+      top:0;
+      left:0;
+      /*background:rgba(0,0,0,0.5)*/
+}
+
+
+#hero video {
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:-1;
+      object-fit:cover;
+      font-family:'object-fit: cover';
+}
+
+
+#hero .texture {
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:15;
+      background:url('../texture.png');
+}
+
+
+#hero .caption {
+	color: #fff;
+    /* padding-top: 180px; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+#hero .caption h1 {
+
+      text-transform: uppercase;
+      font-size:2em;
+      font-family: 'Oswald', sans-serif;
+	  margin-bottom:0.5rem;
+	  margin-top: 100px;
+	  text-align: center;
+
+}
+
+#hero .caption h2 {
+      font-weight:400;
+      font-size:1.5rem;
+      margin:0;
+      text-align: center;
+      font-family: 'PT Sans', sans-serif;
+}
+
+/* Hero End */
+
+.section{
+	background-color:#98acf8;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.section__heading {
+	font-family: 'Nerko One', cursive;
+
+	padding-top: 20px;
+	font-size: 50px;
+	align-content: center;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #bedcfa;
+	text-shadow: 7px 7px #b088f9;
+}
+
+.section__content li {
+    font-family: 'Nerko One', cursive;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+/* Section End */
+
+.section2{
+
+	border-top: 6px solid #bedcfa;
+	background-color: #b088f9;
+	height: 60vh;
+	justify-content: space-evenly;
+}
+
+.section2__heading {
+	font-family: 'Nerko One', cursive;
+
+	padding-top: 20px;
+	font-size: 50px;
+	align-content: center;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #9f70f5;
+	text-shadow: 7px 7px #bedcfa;
+}
+
+/* Footer */
+
+.footer{
+	background-color: black;
+	display: flex;
+	height: 20vh;
+	justify-content: space-between;
+}
+
+.footerRight{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #bedcfa;
+	padding-right: 10px;
+}
+
+.footerLeft{
+	display: flex;
+	height: 100%;
+}
+
+.footerIcon img{
+	width: 100px;
+	padding-left: 15px;
+	align-items: center;
+	padding-top: 20px;
+}
+
+/* Footer End */
+
+
+/* Team */
+
+.section__team{
+
+	border-top: 6px solid #bedcfa;
+    background-color: #98acf8;
+    padding-top: 120px;
+	/* height: 100vh;
+	justify-content: space-evenly; */
+}
+
+
+
+/* CARDS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+section{
+    padding-top: 0;
+	/*background-color: #fff;*/
+	padding-bottom: 40px;
+}
+
+
+.card-wrapper{
+    display: flex;
+    /* align-items: center; */
+    align-content: center;
+    /* flex-direction: column; */
+}
+
+.card{
+    width: 30rem;
+    background-color: #ebeef8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+	box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform .5s;
+}
+
+.card:hover{
+	transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
+.card .card-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.profile-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #005DAA;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+	margin: 1.5rem 0;
+	font-weight: bold;
+}
+
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+	font-weight: 300;
+	font-weight: 800;
+}
+
+.about {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+	color: #333;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 600;
+}
+
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 2px solid rgba(0,0,0,.1);
+}
+
+.social-media i{
+    font-size: 3rem;
+    transition: color .5s;
+}
+
+.fa-linkedin-in{
+    color: #0e76a8;
+}
+
+.fa-instagram{
+    color: #e1306c;
+}
+
+.fa-linkedin-in:hover,
+.fa-instagram:hover {
+	color: #45e19f;
+}
